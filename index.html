@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theLibrary</title>
     <link rel="stylesheet" href="styles.css"/>
-    <title>TOP Project Library</title>
 </head>
 <body>
-
-<button id="dialogButton">New Book</button>
-<script src="index.js"></script>
+    <h2>theLibrary</h2>
+    <button id="book-button" style="margin-left:50px ;">New Book</button>
+    <div class="formCard">
+        <form id="bookForm" style="display: none;">
+            <div id='close-area'>
+                <button id="close-form" type="button">X</button>
+            </div>
+            <p>
+                <label for="title">Book Title</label>
+                <input type="text" id="title" name="title"/>
+            </p>
+            <p>
+                <label for="author">Book Author</label>
+                <input type="text" id="author" name="author"/>
+            </p>
+            <p>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" name="pages"/>
+            </p>
+            <p>
+                <label for="read">Read</label>
+                <input type="checkbox" id="read" name="read"/>
+            </p>
+            <p>
+                <input type="submit" value="Add Book"/>
+            </p>
+        </form>
+    </div>
+    <div id="libraryShelf"></div>
+   
+    <script src="index.js"></script>
 </body>
 </html>
